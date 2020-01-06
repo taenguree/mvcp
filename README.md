@@ -83,7 +83,8 @@ internal class RootLayout constructor(
     }
     
     override fun onRestoreInstanceState(state: Parcelable?) {
-        if(state is SavedState) {
+        
+        state is SavedState) {
             super.onRestoreInstanceState(state.superState)
 
             looknFeel = state.looknFeel
@@ -97,7 +98,7 @@ internal class RootLayout constructor(
     override fun onSaveInstanceState(): Parcelable? {
         val parcelable = super.onSaveInstanceState()
 
-        if(parcelable == null) {
+        if (parcelable == null) {
             return parcelable
         }
 
