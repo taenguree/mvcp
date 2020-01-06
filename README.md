@@ -15,6 +15,7 @@
   
 - MVCP 는 아래와 같은 전제 조건들 아래 구성된 아키텍쳐입니다.
   - V 는 멍청하지 않습니다. 똑똑합니다.
+  - V 에는 Rx 와 같은 외부 라이브러리에 대한 디펜던시가 존재하지 않아야 합니다.
   - 비지니스 로직을 담당하는 CP 는 명령형이 아닌 선언형 기반(Event-Driven)입니다. (feat. RxJava)
   - CP 에는 데이터 관련 클래스에 대한 직접적인 디펜던시가 없습니다. CP 는 상황에 따라 데이터 전달자의 역할만 합니다. 
   - CP, DataSource 에서는 최대한 android dependency 를 최대한 제거합니다. (ex, Context, Resources, etc)
