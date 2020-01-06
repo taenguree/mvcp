@@ -408,6 +408,7 @@ internal class RootLayout constructor(
  ``` kotlin
  internal sealed class LoginDataCase {
     class LoginLooknFeelFetched(val looknFeel: LoginLayout.LooknFeel) : LoginDataCase()
+    
     class LoginFetched(val isSuccessful: Boolean) : LoginDataCase()
   }
  ```
