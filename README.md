@@ -211,7 +211,7 @@ internal class RootLayout constructor(
     - 또 이는 즉, 외부요소는 acitivty 의 fun bindLooknFeelCase(..), fun bindNavigationCase(..) 이 두 함수만 호출할 수 있다는 것을 의미합니다.
 
 ## ViewModel
-  - ViewModel 은 configuation change 때 기존에 존재하는 Model 과 CaseProvider 의 instance 를 계속 유지하기 위해서만 사용됩니다.
+  - ViewModel 은 configuration change 때 기존에 존재하는 Model 과 CaseProvider 의 instance 를 계속 유지하기 위해서만 사용됩니다.
   - 비지니스 로직은 ViewModel 에 포함되지 않습니다.
   - 아래는 ViewModel 기본 시그니쳐 입니다.
 
