@@ -376,6 +376,10 @@ internal class RootLayout constructor(
   }
   ```
 
+## PresentCase && SourceCase
+  - PresentCase 와 SourceCase 는 특정 **상황** 때 이 상황에 해당하는 **데이터** 를 전달하는 역할만 합니다.
+  - 상황에 따른 분기처리는 존재하지만 세부 데이터에 따른 분기처리는 최대한 존재하지 않도록 작성합니다.
+
 ## DataSource
  - SourceCase 의 명령에 따라 Database, Network, MemoryCache, Intent 등에서 부터 View 가 필요한 데이터를 응답해주는 구성요소입니다.
  - View 데이터(ex, LooknFeel) 가 아닌 외부 요소와 관련된 모든 데이터는 여기 DataSource 로 부터 가져오게 됩니다.
