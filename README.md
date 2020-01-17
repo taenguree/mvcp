@@ -336,6 +336,8 @@ internal class RootLayout constructor(
 ## SourceCase
   - SourceCase 는 CaseProvider 에 명세된 이벤트(상황)들을 사용/조합해 DataSource 로부터 데이터를 fetch 해오거나 데이터를 publish 하는 구성요소 입니다.
   - SourceCase 의 기본 시그니쳐는 아래와 같습니다.
+  - Fetch 안에 있는 변수의 네이밍은 SourceCase 입장에서 무엇을 fetch 하는지를 적습니다.
+  - Publbish 안에 있는 변수의 네이밍은 SourceCase 입장에서 무엇을 publish 하는지를 적습니다.
 
   ``` kotlin
   internal class LoginSourceCase @Inject constructor(
