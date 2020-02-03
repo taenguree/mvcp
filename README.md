@@ -218,7 +218,7 @@ internal class RootLayout constructor(
   ``` kotlin
   internal class LoginViewModel @Inject constructor(
                 val presentCase: LoginPresentCaseApi,
-        private val sourCase: LoginSourceCaseApi,
+        private val sourceCase: LoginSourceCaseApi,
         private val caseProvider: LoginCaseProviderApi
 
   ) : ViewModel() {
