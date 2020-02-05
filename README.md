@@ -41,7 +41,7 @@
     tools:context="com.my.package.LoginLayout" />
 ```
 
-- Activity 나 Fragment 에 존재하는 하나의 Root layout 은 아래와 같은 기본 시그니쳐를 가지고 됩니다.
+- Activity 나 Fragment 에 존재하는 하나의 Root layout 은 아래와 같은 기본 시그니쳐를 가지게 됩니다.
   - LooknFeel 클래스는 Layout 구성에 필요한 View Data 를 담고 있는 클래스입니다.
   - 이 RootLayout 은 뷰가 스스로 할 수 있는 동작은 최대한 스스로 하도록 구성합니다. 
     - 예) 비밀번호 4자리를 입력했을 경우 로그인 버튼을 활성화 시키는 UX 가 있다고 가정하면 이 동작은 외부 데이터가 필요없으니 CP 나 ViewModel 혹은 Activity 가 전혀 관여하지 않고 View 가 알아서 로그인 버튼을 활성화 시킵니다.
